@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/bulma.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+  <section class="section itemku">
+    <div class="columns">
+      <div class="column">
+        <div class="box is-marginless">
+          <div class="content">
+            <strong>Banana Boat</strong>
+            <!--awal modal-->
+          <div class="modal" id="myModal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+              <header class="modal-card-head">
+                <p class="modal-card-title">Modal title</p>
+                <button class="delete" aria-label="close" data-bulma-modal="close"></button>
+              </header>
+              <section class="modal-card-body">
+                <p>Modal saya ini</p>
+              </section>
+              <footer class="modal-card-foot">
+                <button class="button is-success">Save changes</button>
+                <button class="button" data-bulma-modal="close">Cancel</button>
+              </footer>
+            </div>
+         </div>
+         <!--akhir modal-->
+          <a class="delete is-medium is-pulled-right" id="btn"></a>
+          </div>
+        </div>
+        <div class="box">
+          <article class="media">
+            <div class="media-left">
+              <figure class="image is-128x96">
+                <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
+              </figure>
+            </div>
+            <div class="media-content">
+              <div class="content">
+                  <div class="columns">
+                      <div class="column is-4">
+                          <p class="title is-6">Booking Date: <span class="subtitle is-6"> 12 Februari 2019</span></p>
+                          <p class="title is-6">Booking Time: <span class="subtitle is-6">10.00 Wita</span></p>
+                          <p class="title is-6">Duration: <span class="subtitle is-6">10 Minutes</span></p>
+                      </div>
+                      <div class="column is-3">
+                          <p class="title is-6">IDR : <span class="subtitle is-6">Rp.20000000</span></p>
+                      </div>
+                      <div class="column is-3">
+                        <p>
+                        <strong>Person:</strong>
+                        <br>
+                        <br>
+                          <div class="quantity" style="margin-top: -30px;">
+                            <input type='button' value='-' class='minus' field='quantity' /><input type='text' name='quantity' value='0' class='qty' /><input type='button' value='+' class='plus' field='quantity' />
+                          </div>
+                        </p>
+                      </div>
+                      <div class="column is-3">
+                        <p class="title is-6"> Total:</p>
+                        <p subtitle is-6>Rp.200000</p>
+                      </div>
+                    </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="margin-top:-40px;">
+      <div class="buttons are-medium is-pulled-right"><a class="button is-danger is-outlined">Update List</a></div>
+  </section>
+
+  <section class="section">
+      <div class="columns">
+        <div class="column column is-4 is-offset-8">
+          <h1 style="font-size: 36px">Cart Totals</h1>
+          <br>
+          <p style="font-size: 24px">Subtotal: <span class="is-pulled-right">Rp20000</span></p>
+          <hr style="background:teal">
+          <p style="font-size: 24px">Total:<span class="is-pulled-right">Rp20000</span></p>
+          <br>
+          <a class="button is-medium is-fullwidth is-success">Proceed to Checkout</a>
+        </div>
+      </div>
+  </section>
+  <script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
