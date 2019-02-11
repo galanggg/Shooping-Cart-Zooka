@@ -12,7 +12,7 @@
 
 <body>
   <section class="section itemku">
-    <div class="columns">
+    <div class="columns is-mobile is-desktop">
       <div class="column">
         <div class="box is-marginless">
           <div class="content">
@@ -20,18 +20,22 @@
             <!--awal modal-->
           <div class="modal" id="myModal">
             <div class="modal-background"></div>
-            <div class="modal-card">
-              <header class="modal-card-head">
-                <p class="modal-card-title">Modal title</p>
-                <button class="delete" aria-label="close" data-bulma-modal="close"></button>
-              </header>
-              <section class="modal-card-body">
-                <p>Modal saya ini</p>
+            <div class="modal-card" style="width:400px">
+              <section class="modal-card-body has-text-centered" style="border-radius: 8px;">
+                  <a class="delete is-pulled-right" aria-label="close" data-bulma-modal="close"></a>
+                  <nav class="level">
+                      <div class="level-item has-text-centered">
+                        <figure class='image is-128x128' style="margin-right:10px;"><img src='./trash-bin(1).png'></figure>
+                      </div>
+                    </nav>
+                    <nav class="level">
+                      <div class="level-item has-text-centered">
+                        <p style="font-size: 20px;">Are you sure to delete this items ?</p>
+                      </div>
+                    </nav>
+                    <button class="button is-danger">Delete</button>
+                  <button class="button">Cancel</button>
               </section>
-              <footer class="modal-card-foot">
-                <button class="button is-success">Save changes</button>
-                <button class="button" data-bulma-modal="close">Cancel</button>
-              </footer>
             </div>
          </div>
          <!--akhir modal-->
